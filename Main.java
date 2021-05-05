@@ -1,20 +1,48 @@
+import java.util.Scanner;
+
 public class Main {
 
     public static void main() {
 
+        int opcao = 0;
+        Scanner entrada = new Scanner(System.in);
+
         //apresentar o programa
+        System.out.println("Calculo de area/circunferencia ou area/perimetro");
 
-        //oferecer as opcoes de circulo ou quadrado
+        do {
 
-        //uma classe de calculos pra cada
+            //oferecer as opcoes de circulo ou quadrado
+            System.out.print("Digite 1 para circulo, 2 para quadrado ou 3 para encerrar o programa: ");
+            entrada.nextInt();
 
-        //receber e verificar os valores (reais, pois circunferencia envolve π)
+            switch(opcao) {
 
-        //usar objetos das classes para atribuir-lhes valores e retornar os calculos
+                case 1:
+                    //instanciar o objeto para circulo
+                    //receber o raio
+                    //passar o argumento para a instancia
+                    //exibir o resultado
+                    break;
 
-        //perguntar se deseja fazer de novo
+                case 2:
+                    //instanciar o objeto para quadrado
+                    //receber o lado
+                    //passar o argumento para a instancia
+                    //exibir o resultado
+                    break;
 
-        //encerrar o programa
+                case 3:
+                    opcao = 4;
+                    break;
+
+                default:
+                    break;
+
+            }
+
+        } while ((opcao < 1) || (opcao > 3));
 
     }
+
 }
